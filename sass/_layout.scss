@@ -11,3 +11,33 @@
         @content;
     }
 }
+
+body {
+    background: black;
+    font-size: 16px;
+    color: #ffffff;
+    
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  p {
+    margin: 50px;
+    color: white;
+  }
+  
+  select {
+    color: black;
+    background: white;
+    width: 20%;
+  }
+
+  .logo {
+      width: 40%;
+  }
