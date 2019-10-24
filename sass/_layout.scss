@@ -1,0 +1,13 @@
+/* layout: contains all the css that handles the layout, such as the container and any grid systems. */
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
