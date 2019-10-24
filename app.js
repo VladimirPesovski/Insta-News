@@ -1,24 +1,18 @@
 $(function() {
 
+        
+  
 
-   
-
-        $("button").on("click", function() {
-            $.getJSON('https://api.nytimes.com/svc/topstories/v2/science.json?api-key=jGnr0G8J3IgQZ3kmspywu5bYkvAD26Cr')
+        $("select").on("change", function() {
+            let $selection = $(this).val()
+            console.log($selection)
+            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=jGnr0G8J3IgQZ3kmspywu5bYkvAD26Cr`)
             .done(function(data) {
-                $.each(data, function(key, value) {
-                    console.log(data)
+                $.each(data.results, function(key, value) {
+                    console.log(data.results)
+                $(".display").append(`<img src="${value.multimedia}"/>`)
 
-
-
-
-
-
-
-
-                    
-                // $(".results").append(`<p>${value.description}</p>`)
-                // $(".results").append(`<img src="https://openweathermap.org/img/wn/${value.icon}@2x.png"/>`)
+                // $(".post").append(`<p>${value.icon}</p>`)
                 // $(".results").append(`<p>${value.id}</p>`)
                 // $(".results").append(`<p>${value.main}</p>`)
                 
