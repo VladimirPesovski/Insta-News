@@ -1,0 +1,31 @@
+html{
+    background: black;
+    align-content: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    
+    width: 40%;
+}
+
+div {
+    color: white;
+    text-align: center;
+    margin: 30px 0px 10px 0;
+}
+
+select {
+
+    display: block;
+    margin: auto;
+    align-content: center;
+    background: white;
+    
+}
+
+
+
+
