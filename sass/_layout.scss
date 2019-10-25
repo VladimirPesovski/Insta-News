@@ -1,18 +1,6 @@
 /* layout: contains all the css that handles the layout, such as the container and any grid systems. */
 @font-face {
     font-family: 'Open Sans';
-    src: url('OpenSans-BoldItalic.eot');
-    src: url('OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-BoldItalic.woff2') format('woff2'),
-        url('OpenSans-BoldItalic.woff') format('woff'),
-        url('OpenSans-BoldItalic.ttf') format('truetype'),
-        url('OpenSans-BoldItalic.svg#OpenSans-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Open Sans';
     src: url('OpenSans-Light.eot');
     src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
         url('OpenSans-Light.woff2') format('woff2'),
@@ -23,37 +11,18 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Bold.eot');
-    src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('OpenSans-Bold.woff2') format('woff2'),
-        url('OpenSans-Bold.woff') format('woff'),
-        url('OpenSans-Bold.ttf') format('truetype'),
-        url('OpenSans-Bold.svg#OpenSans-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+
+
+   
+html {
+    font-family: "Open Sans"
 }
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSansLight-Italic.eot');
-    src: url('OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('OpenSansLight-Italic.woff2') format('woff2'),
-        url('OpenSansLight-Italic.woff') format('woff'),
-        url('OpenSansLight-Italic.ttf') format('truetype'),
-        url('OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-
 
 body {
     background: black;
     font-size: 16px;
     color: #ffffff;
-    font-family: "open sans";
+    
     
   }
   
@@ -63,6 +32,7 @@ body {
     position: relative;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 30px;
         p {
         margin: 20px;
         color: white;
@@ -70,10 +40,10 @@ body {
         select {
         color: black;
         background: white;
-        width: 22%;
+        width: 23%;
         border-radius: 5px;
-        font-size: 16px;
-        padding: 0px 0px 0px 5px;
+        font-size: 14px;
+        padding: 2px 0px 2px 5px;
         }      
 
   }
@@ -85,7 +55,10 @@ body {
 
 .display {
     height: 1000px;
+   
 }
+
+
   
   
   
