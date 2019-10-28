@@ -93,10 +93,34 @@ body {
   margin-top: 120px; }
 
 .display {
-  height: 1000px; }
+  height: 1000px;
+  position: relative; }
   .display img {
     width: 100%; }
   .display p {
-    padding: 30px; }
+    padding: 20px;
+    color: white; }
+
+footer {
+  color: #c2c2c2;
+  padding: 20px 0;
+  margin: 20px 0; }
+  footer p {
+    text-align: center;
+    vertical-align: bottom; }
+
+@media (min-width: 600px) {
+  .display {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%; } }
+
+@media (min-width: 1024px) {
+  .display {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%; } }
 
 /* Anything reusable such as buttons, navbars, cards etc.. */

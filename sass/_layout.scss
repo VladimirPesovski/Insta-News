@@ -27,6 +27,7 @@ body {
   }
   
 .top {
+   
     display: flex;
     flex-direction: column;
     position: relative;
@@ -37,6 +38,7 @@ body {
         margin: 20px;
         color: white;
         }
+        
         select {
         color: black;
         background: white;
@@ -44,24 +46,75 @@ body {
         border-radius: 5px;
         font-size: 14px;
         padding: 2px 0px 2px 5px;
-        }      
+        }     
 
   }
 
 .logo {
     width: 50%;
-    margin-top: 120px;
-    }
-
-.display {
-    height: 1000px;
-   
+    margin-top: 120px; 
 }
 
 
-  
-  
-  
-  
 
+.display {
+    height: 1000px;
+    position: relative;
+    img {
+        width: 100%;  
+    }
+    p { 
+        
+        padding: 20px; 
+        color: white;     
+    }   
+    
+}
+
+footer {
+    color: #c2c2c2;
+    padding: 20px 0;
+    margin: 20px 0; 
+    p {
+    text-align: center;
+    vertical-align: bottom; }
+    }
+
+    
+
+
+@include tablet {
+  
+   
+    .display {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+    }
+}
+
+@include desktop {
+
+    .display {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 100%;
+    }
+
+
+}
+
+    
+        
+
+
+    
+
+
+
+
+  
+  
   
