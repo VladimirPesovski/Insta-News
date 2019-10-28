@@ -35,24 +35,31 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
         p {
-        margin: 20px;
         color: white;
+        font-size: 1.1em;
+        
+
         }
         
         select {
         color: black;
         background: white;
-        width: 23%;
+        width: 100%;
         border-radius: 5px;
-        font-size: 14px;
+        font-size: 16px;
         padding: 2px 0px 2px 5px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        
+        
         }     
 
   }
 
 .logo {
-    width: 50%;
+    width: 40%;
     margin-top: 120px; 
+    margin-bottom: 20px;
 }
 
 
@@ -80,11 +87,14 @@ footer {
     vertical-align: bottom; }
     }
 
-    
+
+
+
 
 
 @include tablet {
-  
+
+      
    
     .display {
         display: grid;
