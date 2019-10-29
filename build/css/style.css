@@ -101,8 +101,16 @@ body {
   .display img {
     width: 100%; }
   .display p {
-    padding: 20px;
-    color: white; }
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    margin-top: -100px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    -ms-flex-line-pack: center;
+        align-content: center; }
 
 footer {
   color: #c2c2c2;

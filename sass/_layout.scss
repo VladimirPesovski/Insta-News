@@ -71,9 +71,14 @@ body {
         width: 100%;  
     }
     p { 
-        
-        padding: 20px; 
-        color: white;     
+        position: relative;
+        background-color: rgba(0,0,0,.5);
+        padding: 10px; 
+        color: white;  
+        margin-top: -100px;
+        justify-content: baseline; 
+        align-content: center;
+
     }   
     
 }
