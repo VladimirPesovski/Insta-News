@@ -67,17 +67,24 @@ body {
 .display {
     height: 1000px;
     position: relative;
+    
+    
+
     img {
-        width: 100%;  
+        // position: relative;
+        width: 100%;
+         
     }
     p { 
         position: relative;
+        height: auto; 
         background-color: rgba(0,0,0,.5);
         padding: 10px; 
         color: white;  
-        margin-top: -100px;
-        justify-content: baseline; 
-        align-content: center;
+        margin-top: -110px;
+        bottom: 0;
+        // justify-content: baseline; 
+        // align-content: center;
 
     }   
     
@@ -127,6 +134,7 @@ footer {
 
 footer {
         font-size: 11px;
+        z-index: 999;
     }
 }
 
