@@ -47,7 +47,6 @@ table {
 
 /*
 Base: contained within this file are all your resets, variables, mixins, and any utility classes. */
-/* layout: contains all the css that handles the layout, such as the container and any grid systems. */
 @font-face {
   font-family: 'Open Sans';
   src: url("OpenSans-Light.eot");
@@ -108,16 +107,9 @@ figure {
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    line-height: 1.5em;
     color: white;
     bottom: 0em; }
-
-footer {
-  color: #c2c2c2;
-  padding: 20px 0;
-  margin: 20px 0; }
-  footer p {
-    text-align: center;
-    vertical-align: bottom; }
 
 @media (min-width: 600px) {
   .top {
@@ -131,7 +123,7 @@ footer {
   .selection {
     margin-top: 130px;
     margin-left: 10px;
-    font-size: 10px; }
+    font-size: 16px; }
     .selection select {
       font-size: 10px;
       width: 80%;
@@ -147,7 +139,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     height: 100%; }
   footer {
-    font-size: 11px;
     z-index: 999; } }
 
 @media (min-width: 1024px) {
@@ -173,3 +164,19 @@ footer {
     height: 100%; } }
 
 /* Anything reusable such as buttons, navbars, cards etc.. */
+footer {
+  color: #c2c2c2;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  padding: 20px 0;
+  margin: 20px 0;
+  text-align: center; }
+  footer p {
+    text-align: center;
+    vertical-align: bottom; }
+
+@media (min-width: 1024px) {
+  footer p {
+    text-align: left;
+    padding-left: 50px; } }

@@ -8,7 +8,6 @@ Base: contained within this file are all your resets, variables, mixins, and any
 
 @mixin tablet {
     @media (min-width: 600px) {
-        @content;
-            
+        @content;  
         }
 }

@@ -1,4 +1,3 @@
-/* layout: contains all the css that handles the layout, such as the container and any grid systems. */
 @font-face {
     font-family: 'Open Sans';
     src: url('OpenSans-Light.eot');
@@ -11,9 +10,6 @@
     font-style: normal;
 }
 
-
-
-   
 html {
     font-family: "Open Sans"
 }
@@ -21,13 +17,10 @@ html {
 body {
     background: black;
     font-size: 16px;
-    color: #ffffff;
-    
-    
+    color: #ffffff;   
   }
   
-.top {
-   
+.top { 
     display: flex;
     flex-direction: column;
     position: relative;
@@ -37,10 +30,7 @@ body {
         p {
         color: white;
         font-size: 1.1em;
-        
-
         }
-        
         select {
         color: black;
         background: white;
@@ -50,11 +40,8 @@ body {
         padding: 2px 0px 2px 5px;
         margin-top: 20px;
         margin-bottom: 35px;
-        
-        
-        }     
-
-  }
+        } 
+}
 
 .logo {
     width: 40%;
@@ -62,50 +49,25 @@ body {
     margin-bottom: 20px;
 }
 
-
-
 figure {
-    // height: 1000px;
     position: relative;
-    // object-fit: cover;
-    
-    
-
-    img {
-       
+    img {  
     width: 100%;
     height: 100%;
-    // display: block;
     object-fit: cover;   
     }
-
     p { 
         position: absolute;
         display: block;
         height: auto; 
         background-color: rgba(0,0,0,.5);
-        padding: 10px; 
+        padding: 10px;
+        line-height: 1.5em; 
         color: white;
         bottom: 0em;
         
-        
-    
-
-    }   
-    
+    }      
 }
-
-
-
-footer {
-    color: #c2c2c2;
-    padding: 20px 0;
-    margin: 20px 0; 
-    p {
-    text-align: center;
-    vertical-align: bottom; }
-    }
-
 
 @include tablet {
     .top {
@@ -116,7 +78,7 @@ footer {
     .selection {
         margin-top: 130px;
         margin-left: 10px;
-        font-size: 10px;
+        font-size: 16px;
         select {
             font-size: 10px;
             width: 80%;
@@ -127,10 +89,8 @@ footer {
         }
     }
     .logo {
-        width: 30%;
-       
+        width: 30%;  
     }   
-
 
 .display {
         display: grid;
@@ -140,7 +100,6 @@ footer {
     }
 
 footer {
-        font-size: 11px;
         z-index: 999;
     }
 }
@@ -169,16 +128,13 @@ footer {
     width: 20%;
 }
 
-
-
     .display {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 100%;
     }
-
-
+    
 }
 
     
@@ -190,6 +146,5 @@ footer {
 
 
 
-  
   
   
