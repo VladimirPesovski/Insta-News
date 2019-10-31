@@ -64,31 +64,38 @@ body {
 
 
 
-.display {
-    height: 1000px;
+figure {
+    // height: 1000px;
     position: relative;
+    // object-fit: cover;
     
     
 
     img {
-        // position: relative;
-        width: 100%;
-         
+       
+    width: 100%;
+    height: 100%;
+    // display: block;
+    object-fit: cover;   
     }
+
     p { 
-        position: relative;
+        position: absolute;
+        display: block;
         height: auto; 
         background-color: rgba(0,0,0,.5);
         padding: 10px; 
-        color: white;  
-        margin-top: -110px;
-        bottom: 0;
-        // justify-content: baseline; 
-        // align-content: center;
+        color: white;
+        bottom: 0em;
+        
+        
+    
 
     }   
     
 }
+
+
 
 footer {
     color: #c2c2c2;

@@ -95,19 +95,21 @@ body {
   margin-top: 120px;
   margin-bottom: 20px; }
 
-.display {
-  height: 1000px;
+figure {
   position: relative; }
-  .display img {
-    width: 100%; }
-  .display p {
-    position: relative;
+  figure img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  figure p {
+    position: absolute;
+    display: block;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     color: white;
-    margin-top: -110px;
-    bottom: 0; }
+    bottom: 0em; }
 
 footer {
   color: #c2c2c2;
